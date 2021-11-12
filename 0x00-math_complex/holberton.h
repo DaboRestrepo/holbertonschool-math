@@ -4,12 +4,20 @@
 #include <stdlib.h>
 
 /* Structures */
-typedef struct complex {
-    double re;
-    double im;
+/**
+ * struct complex - Struct complex
+ *
+ * @re: the real number
+ * @im: the imaginary number
+ */
+typedef struct complex
+{
+	double re;
+	double im;
 } complex;
 
-/* Prototypes */ 
+/* Prototypes */
 void display_complex_number(complex c);
+complex conjugate(complex c);
 
 #endif
